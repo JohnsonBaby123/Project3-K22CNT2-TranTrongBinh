@@ -31,7 +31,19 @@
 	</bean>
 
 	<!-- Correct the package name to 'com.springmvc.dao.UserDao' -->
-	<bean id="dao" class="com.springmvc.dao.TtbNguoiDungDao">
+	<bean id="nguoiDungDao" class="com.springmvc.dao.TtbNguoiDungDao">
+		<property name="template" ref="jt"></property>
+	</bean>
+	<bean id="cuDanDAO" class="com.springmvc.dao.TtbCuDanDAO">
+		<property name="template" ref="jt"></property>
+	</bean>
+	<bean id="thongBaoDao" class="com.springmvc.dao.TtbThongBaoDao">
+		<property name="template" ref="jt"></property>
+	</bean>
+	<bean id="tienIchDao" class="com.springmvc.dao.TtbTienIchDao">
+		<property name="template" ref="jt"></property>
+	</bean>
+	<bean id="canHoDao" class="com.springmvc.dao.TtbCanHoDao">
 		<property name="template" ref="jt"></property>
 	</bean>
 </beans>

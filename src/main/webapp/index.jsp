@@ -35,6 +35,9 @@
             background: #ffc107;
             color: black;
         }
+        .auth-buttons a.logout {
+            background: #dc3545;
+        }
         .auth-buttons a:hover {
             opacity: 0.8;
         }
@@ -71,15 +74,20 @@
 <div class="header">
     <h1>Hệ Thống Quản Lý Chung Cư An Bình</h1>
     <div class="auth-buttons">
-        <a href="login.jsp">Đăng nhập</a>
+        <a href="login">Đăng nhập</a>
+        <a href="signup" class="register">Đăng ký</a>
+        <a href="logout" class="logout">Đăng xuất</a>
     </div>
 </div>
 
 <div class="nav">
-    <a href="nguoidung">Danh sách căn hộ</a>
-    <a href="add">Danh sách cư dân</a>
-    <a href="view/1">Các dịch vụ tiện ích</a>
-    <a href="edit/1">Thông báo</a>
+    <a href="nguoidung">Danh Sách Người Thuê</a>
+   <a href="${pageContext.request.contextPath}/cudan">Danh sách cư dân</a>
+   <a href="${pageContext.request.contextPath}/canho">Danh sách căn hộ</a>
+ <a href="${pageContext.request.contextPath}/tienich">Các dịch vụ tiện ích</a>
+
+  <a href="${pageContext.request.contextPath}/thongbao">Thông báo</a>
+
 </div>
 
 <div class="content">
